@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .h-section {
+        @apply
+        pt-12
+        pb-16
+        md:pt-24
+        md:pb-8
+      }
+    
+      .h-container {
+        @apply
+        maxSm:w-full
+        sm:max-w-7xl
+        sm:mx-auto
+        maxXl:px-4
+      }
+    
+      .h-grid {
+        @apply
+        grid
+        gap-5
+      }
+    
+      .h-paddingX {
+        @apply
+        px-3
+        sm:px-4
+        xl:px-0
+      }
+    
+      .h-section-center {
+        @apply
+        flex
+        flex-col
+        justify-center
+        items-center
+      }
+    
+      .h-section-title {
+        @apply 
+        text-purple-900
+        font-bold
+        maxMd:text-3xl
+        text-4xl
+        text-center
+      }
+
+      .h-section-description {
+        @apply 
+        text-gray-500
+        max468:mt-2
+        mt-4
+        mb-14
+        font-poppins
+        font-normal
+        text-lg
+        maxMd:text-base
+        text-center
+        px-5
+    }
+}
+
+@layer components {
+    .h-hero {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: -webkit-image-set(url(https://assets.hostinger.com/images/sales/summerSale2022v2/header/header-bg-xs-2f7e91d355.png) 1x, url(https://assets.hostinger.com/images/sales/summerSale2022v2/header/header-bg-xs@2x-0e4b9a7de4.png) 2x);
+        background-image: -webkit-image-set(url(https://assets.hostinger.com/images/sales/summerSale2022v2/header/header-bg-md-337e11367e.png) 1x,url(https://assets.hostinger.com/images/sales/summerSale2022v2/header/header-bg-md@2x-dc5c49dec5.png) 2x);
+    }
+
+    .h-header {
+        transition: .1s;
+
+        @apply
+        fixed
+        top-0
+        left-0
+        w-full
+        flex
+        justify-between
+        items-center
+        px-4
+        maxMd:h-[4rem]
+
+        md:relative
+    }
+
+    .h-nav {
+        transition: .5s;
+
+        @apply
+        maxMd:fixed
+        maxMd:top-0
+        maxMd:-left-full
+        maxMd:w-[80%]
+        maxMd:py-8
+        maxMd:z-10
+        maxMd:overflow-y-auto
+
+        min469:w-[290px]
+        md:w-full
+    }
+
+    .h-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .h-nav__content {
+        @apply
+        flex
+        flex-col
+
+        md:flex-row
+        md:items-center
+        md:justify-end
+    }
+
+    .h-nav__list {
+        @apply
+        flex
+        flex-col
+        gap-y-4
+
+        md:flex
+        md:flex-row
+        md:items-center
+        md:gap-x-6
+    }
+
+    .h-nav__link {
+        @apply
+        md:hover:text-slate-50
+    }
+
+    .h-dropdown__link {
+        @apply
+        relative
+        flex
+        items-center
+        justify-between
+    }
+
+    .h-dropdown__menu {
+        @apply
+        mt-4
+        ml-4
+        hidden
+
+        md:fixed
+        md:m-0
+        md:top-[4rem]
+        md:shadow-lg
+        md:bg-red-600
+        md:rounded-lg
+    }
+
+    .h-dropdown__item {
+        @apply
+        m-4
+        font-normal
+        hover:text-slate-500
+        maxMd:text-white
+        maxMd:hover:text-slate-300
+    }
+
+    .h-dropdown__item .h-nav__link {
+        @apply
+        md:hover:text-slate-500
+    }
+
+    .h-dropdown {
+        @apply
+        relative
+        md:py-5
+        hover:text-slate-200
+        maxMd:hover:text-slate-500
+    }
+
+    .h-dropdown:hover>.h-dropdown__menu {
+        @apply
+        block
+        bg-slate-50
+        maxMd:bg-purple-600
+        p-1
+        rounded-lg
+        text-black
+        font-normal
+    }
+    .h-dropdown:hover .h-dropdown__icon {
+        @apply
+        transition-transform
+        rotate-180
+    }
+
+    .h-service-card {
+        @apply
+        flex
+        flex-row
+        items-center
+        gap-x-2
+        bg-purple-100
+        hover:bg-purple-200
+        hover:shadow-sm
+        transition-all
+        cursor-pointer
+        p-2
+        rounded-lg
+    }
+
+    .h-service-card-title {
+        @apply
+        text-xl
+        maxMd:text-lg
+        max320:text-base
+        font-semibold
+        dark:text-white
+    }
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ----------------------------------- FOR 2K & 4K RESOLUTIONS ----------------------------------- */
+@media screen and (min-width: 2048px) {
+    body {
+        zoom: 1.5;
+    }
+}
+
+@media screen and (min-width: 3840px) {
+    body {
+        zoom: 2;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition-delay: 0s !important;
+    }
+}
