@@ -1,7 +1,12 @@
 
 ## Screenshot
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Website Screenshot](/preview.png)
+## Demo
+
+Demo: https://ziacodes-thapa-codefest.vercel.app/
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
@@ -52,32 +57,26 @@ To deploy this project run
 ```
 
 
-# Hi, I'm Katherine! 👋
+# Hi, I'm Zia Ur Rehman! 👋
 
 
 ## 🚀 About Me
-I'm a full stack developer...
+I'm a Professional FrontEnd Web Developer with expertise in HTML, CSS, JS, React, NextJS, Tailwind. If you want to hire me, contact me on ziaurzai@gmail.com
 
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
+- Mobile Methodology First
+- Responsive Design
+- Theme Change with variable Change
+- Live Preview
 - Fullscreen mode
 - Cross platform
-
-
-## Lessons Learned
-
-What did you learn while building this project? What challenges did you face and how did you overcome them?
+- SEO Friendly
+- Best Practises
+- DRY Coding, etc
 
 
 ## Feedback
 
-If you have any feedback, please reach out to us at fake@fake.com
-
-
-## Demo
-
-Insert gif or link to demo
-
+If you have any feedback, please reach out to me at ziaurzai@gmail.com
