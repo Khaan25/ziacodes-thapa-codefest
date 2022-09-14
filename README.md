@@ -44,7 +44,7 @@ Install dependencies
 Start the server
 
 ```bash
-  npm run start
+  npm run dev
 ```
 
 
@@ -53,7 +53,7 @@ Start the server
 To deploy this project run
 
 ```bash
-  npm run dev
+  npm run build
 ```
 
 
