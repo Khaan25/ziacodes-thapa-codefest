@@ -2,6 +2,7 @@
 ## Screenshot
 
 ![Website Screenshot](/preview.png)
+![Website Screenshot](/preview-fullpage.png)
 ## Demo
 
 Demo: https://ziacodes-thapa-codefest.vercel.app/
