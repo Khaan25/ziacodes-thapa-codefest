@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { UilApps } from '@iconscout/react-unicons'
 import { UilAngleDown } from '@iconscout/react-unicons'
 import { UilTimes } from '@iconscout/react-unicons'
@@ -22,9 +22,9 @@ const Header = () => {
         <>
             <header className={`${ActiveHeader ? 'shadow-[0_1px_20px_7px_rgba(0,0,0,.1)] bg-white border-gray-200 text-black fixed top-0 left-0 w-full' : 'text-white '} h-header `}>
                 <div className="flex items-center justify-between w-full h-container">
-                    <Link to={'/'} className="uppercase font-semibold tracking-wider">
+                    <NavLink to={'/'} className="uppercase font-semibold tracking-wider">
                         HOSTINGER
-                    </Link>
+                    </NavLink>
 
                     <nav className={`h-nav h-full maxMd:p-5 ${ShowMenu ? 'left-0 bg-white text-black shadow-2xl' : ''}`}>
                         <div className="h-nav__content">
@@ -71,7 +71,7 @@ const Header = () => {
                                         </ul>
                                     </li>
 
-                                    <li onClick={CloseMenu} className="nav__item maxMd:mt-5"><a href="#" className="h-nav__link bg-purple-600 hover:bg-purple-500 font-normal text-white px-6 py-2 rounded-full md:bg-purple-500 md:hover:bg-purple-400">Login</a></li>
+                                    <li onClick={CloseMenu} className="nav__item maxMd:mt-5"><NavLink to={'/login'} className="h-nav__link bg-purple-600 hover:bg-purple-500 font-normal text-white px-6 py-2 rounded-full md:bg-purple-500 md:hover:bg-purple-400">Login</NavLink></li>
                                 </ul>
                             </div>
                         </div>

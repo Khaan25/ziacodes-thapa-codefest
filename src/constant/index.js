@@ -138,51 +138,64 @@ export const offers = [
     },
 ]
 
+const baseURL = 'https://www.hostinger.com/'
 export const footerLinks = [
     {
-        title: 'Company',
+        title: 'HOSTING',
         links: [
             {
-                name: 'Explore',
-                link: '/',
+                name: 'Web Hosting',
+                link: baseURL + 'web-hosting',
             },
             {
-                name: 'About Us',
-                link: '/about',
+                name: 'VPS Hosting',
+                link: baseURL + '/vps-hosting',
             },
             {
-                name: 'How it Works',
-                link: '/',
+                name: 'Minecraft Server Hosting',
+                link: baseURL + 'minecraft-server-hosting',
             },
             {
-                name: 'Terms & Services',
-                link: '/',
+                name: 'CyberPanel Hosting',
+                link: baseURL + 'cyberpanel-vps-hosting',
             },
             {
-                name: 'Privacy Policy',
-                link: '/',
+                name: 'WordPress Hosting',
+                link: baseURL + 'wordpress-hosting',
             },
         ],
     },
     {
-        title: 'Resources',
+        title: 'DOMAINS',
         links: [
             {
-                name: 'GST Calculator',
-                link: '/gstCalculator',
+                name: 'Domain Checker',
+                link: baseURL + 'domain-checker',
             },
             {
-                name: 'Partners',
-                link: 'https://www.hoobank.com/partners/',
+                name: 'Free Domain',
+                link: baseURL + 'free-domain',
+            },
+            {
+                name: 'Free SSL Certificate',
+                link: baseURL + 'free-ssl-certificate',
             },
         ],
     },
     {
-        title: 'Partner',
+        title: 'COMPANY',
         links: [
             {
-                name: 'Our Partner',
-                link: 'https://www.hoobank.com/our-partner/',
+                name: 'About Hostinger',
+                link: baseURL + 'about',
+            },
+            {
+                name: 'Carrer',
+                link: baseURL + 'carrer',
+            },
+            {
+                name: 'Contact Us',
+                link: baseURL + 'contacts',
             },
         ],
     },
