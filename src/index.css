@@ -154,7 +154,8 @@
         ml-4
         hidden
 
-        md:fixed
+        md:absolute
+        md:w-max
         md:m-0
         md:top-[4rem]
         md:shadow-lg
