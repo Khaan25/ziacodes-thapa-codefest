@@ -5,6 +5,7 @@
 ## Demo
 
 Demo: https://ziacodes-thapa-codefest.vercel.app/
+Drag the Button "Learn More" and see the magic 😉
 
 
 ## License
