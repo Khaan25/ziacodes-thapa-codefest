@@ -1,6 +1,10 @@
+import { useState } from "react"
 import { points } from "../constant"
+import { motion } from "framer-motion"
 
 const Points = () => {
+    const [selectedId, setSelectedId] = useState(null)
+
     return (
         <>
             <section class="h-section">
@@ -10,10 +14,10 @@ const Points = () => {
                             points.map(point => {
                                 return (
                                     <>
-                                        <div class="flex flex-col items-start border p-6 cursor-pointer hover:shadow-sm rounded-lg">
-                                            <dt class="text-purple-900 font-semibold maxMd:text-xl text-2xl">{point.title}</dt>
-                                            <dd class="h-section-description" style={{ marginBottom: 0, textAlign: 'start', padding: 0 }}>{point.description}</dd>
-                                        </div>
+                                        <motion.article whileHover={{ scale: 1.02 }} whileTap={{ scale: .95 }} class="flex flex-col items-start border p-6 cursor-pointer hover:shadow-sm rounded-lg">
+                                            <motion.h3 class="text-purple-900 font-semibold maxMd:text-xl text-2xl">{point.title}</motion.h3>
+                                            <motion.p class="h-section-description" style={{ marginBottom: 0, textAlign: 'start', padding: 0 }}>{point.description}</motion.p>
+                                        </motion.article>
                                     </>
                                 )
                             })

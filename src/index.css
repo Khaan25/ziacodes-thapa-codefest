@@ -88,6 +88,7 @@
         items-center
         px-4
         maxMd:h-[4rem]
+        z-50
 
         md:relative
     }
@@ -233,6 +234,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
 }
 
 /* ----------------------------------- FOR 2K & 4K RESOLUTIONS ----------------------------------- */

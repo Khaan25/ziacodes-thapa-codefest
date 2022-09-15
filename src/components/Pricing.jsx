@@ -1,6 +1,26 @@
-import React from 'react'
+import { motion } from "framer-motion"
 
 const Pricing = () => {
+    const container = {
+        hidden: { opacity: 1, scale: 0 },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                delayChildren: 0.3,
+                staggerChildren: 0.2
+            }
+        }
+    }
+
+    const item = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1
+        }
+    }
+
     return (
         <>
             <section class="h-section">
@@ -8,8 +28,8 @@ const Pricing = () => {
                     <h2 class="h-section-title">All-In-One Web Hosting</h2>
                     <p class="h-section-description">We prepared the best web hosting plan for you to start. You will be able to adjust plans as you go - our custom-built algorithm will provide suggestions based on your usage.</p>
 
-                    <div class="space-y-8 lg:grid md:grid-cols-2 lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-                        <div class="flex flex-col justify-between p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <motion.div variants={container} whileInView={'visible'} initial="hidden" className="space-y-8 lg:grid md:grid-cols-2 lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+                        <motion.article variants={item} class="flex flex-col justify-between p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                             <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
                             <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
                             <div class="flex justify-center items-baseline my-8">
@@ -26,9 +46,9 @@ const Pricing = () => {
                             </ul>
 
                             <a href="#" class="text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">Get started</a>
-                        </div>
+                        </motion.article>
 
-                        <div class="flex flex-col justify-between p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                        <motion.article variants={item} class="flex flex-col justify-between p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                             <h3 class="mb-4 text-2xl font-semibold">Company</h3>
                             <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for multiple users, extended & premium support.</p>
                             <div class="flex justify-center items-baseline my-8">
@@ -54,9 +74,9 @@ const Pricing = () => {
                                 </li>
                             </ul>
                             <a href="#" class="text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">Get started</a>
-                        </div>
+                        </motion.article>
 
-                        <div class="flex flex-col justify-between p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                        <motion.article variants={item} class="flex flex-col justify-between p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                             <h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
                             <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best for large scale uses and extended redistribution rights.</p>
                             <div class="flex justify-center items-baseline my-8">
@@ -82,8 +102,8 @@ const Pricing = () => {
                                 </li>
                             </ul>
                             <a href="#" class="text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">Get started</a>
-                        </div>
-                    </div>
+                        </motion.article>
+                    </motion.div>
                 </div>
             </section>
         </>
