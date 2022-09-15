@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom"
 import { UilApps } from '@iconscout/react-unicons'
 import { UilAngleDown } from '@iconscout/react-unicons'
 import { UilTimes } from '@iconscout/react-unicons'
+import { logo } from '../assets'
 
 const Header = () => {
     const [ActiveHeader, setActiveHeader] = useState(false)
@@ -22,9 +23,7 @@ const Header = () => {
         <>
             <header className={`${ActiveHeader ? 'shadow-[0_1px_20px_7px_rgba(0,0,0,.1)] bg-white border-gray-200 text-black fixed top-0 left-0 w-full' : 'text-white '} h-header `}>
                 <div className="flex items-center justify-between w-full h-container">
-                    <NavLink to={'/'} className="uppercase font-semibold tracking-wider">
-                        HOSTINGER
-                    </NavLink>
+                    <NavLink to={'/'} className="uppercase font-semibold tracking-wider"><img src={logo} className={`max-w-[130px] ${ActiveHeader ? 'brightness-0 invert-0' : 'brightness-0 invert'}`} alt="Venn Solution Logo" /></NavLink>
 
                     <nav className={`h-nav h-full maxMd:p-5 ${ShowMenu ? 'left-0 bg-white text-black shadow-2xl' : ''}`}>
                         <div className="h-nav__content">
@@ -34,40 +33,40 @@ const Header = () => {
                                         <img src="assets/images/logo.jpg" alt="" />
                                     </div>
 
-                                    <h1 className="md:hidden uppercase font-semibold tracking-wider text-center mb-10">HOSTINGER</h1>
+                                    <img src={logo} className="md:hidden max-w-[130px] mx-auto mb-8 brightness-0" alt="Venn Solution Logo" />
                                 </a>
 
                                 <ul className="h-nav__list">
                                     {/* <li className="h-nav__item"><a href="#" className="h-nav__link active-link">Home</a></li> */}
 
                                     <li className="nav__item h-dropdown">
-                                        <a href="#" className="h-nav__link h-dropdown__link">Hosting <div className="h-dropdown__icon"><UilAngleDown /></div></a>
+                                        <a className="h-nav__link h-dropdown__link">Hosting <div className="h-dropdown__icon"><UilAngleDown /></div></a>
 
                                         <ul className="h-dropdown__menu">
-                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="#" className="h-nav__link">Web Hosting</a></li>
-                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="#" className="h-nav__link">Cloud Hosting</a></li>
-                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="#" className="h-nav__link">WordPress Hosting</a></li>
-                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="#" className="h-nav__link">Hosting for Agencies</a></li>
+                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="https://www.hostinger.com/web-hosting" className="h-nav__link">Web Hosting</a></li>
+                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="https://www.hostinger.com/cloud-hosting" className="h-nav__link">Cloud Hosting</a></li>
+                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="https://www.hostinger.com/wordpress-hosting" className="h-nav__link">WordPress Hosting</a></li>
+                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="https://www.hostinger.com/agency-hosting" className="h-nav__link">Hosting for Agencies</a></li>
                                         </ul>
                                     </li>
 
                                     <li className="nav__item h-dropdown">
-                                        <a href="#" className="h-nav__link h-dropdown__link">VPS <div className="h-dropdown__icon"><UilAngleDown /></div></a>
+                                        <a className="h-nav__link h-dropdown__link">VPS <div className="h-dropdown__icon"><UilAngleDown /></div></a>
 
                                         <ul className="h-dropdown__menu">
-                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="#" className="h-nav__link">VPS Hosting</a></li>
-                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="#" className="h-nav__link">CyberPanel Hosting</a></li>
-                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="#" className="h-nav__link">Minecraft Server Hosting</a></li>
+                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="https://www.hostinger.com/vps-hosting" className="h-nav__link">VPS Hosting</a></li>
+                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="https://www.hostinger.com/cyberpanel-vps-hosting" className="h-nav__link">CyberPanel Hosting</a></li>
+                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="https://www.hostinger.com/minecraft-server-hosting" className="h-nav__link">Minecraft Server Hosting</a></li>
                                         </ul>
                                     </li>
 
                                     <li className="nav__item h-dropdown">
-                                        <a href="#" className="h-nav__link h-dropdown__link">Domain <div className="h-dropdown__icon"><UilAngleDown /></div></a>
+                                        <a className="h-nav__link h-dropdown__link">Domain <div className="h-dropdown__icon"><UilAngleDown /></div></a>
 
                                         <ul className="h-dropdown__menu">
-                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="#" className="h-nav__link">Domain Checker</a></li>
-                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="#" className="h-nav__link">WHOIS Lookup</a></li>
-                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="#" className="h-nav__link">Domain Transfer</a></li>
+                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="https://www.hostinger.com/domain-checker" className="h-nav__link">Domain Checker</a></li>
+                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="https://www.hostinger.com/whois" className="h-nav__link">WHOIS Lookup</a></li>
+                                            <li onClick={CloseMenu} className="h-dropdown__item"><a href="https://www.hostinger.com/transfer-domain" className="h-nav__link">Domain Transfer</a></li>
                                         </ul>
                                     </li>
 
