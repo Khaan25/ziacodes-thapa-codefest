@@ -33,7 +33,7 @@ const Header = () => {
                                         <img src="assets/images/logo.jpg" alt="" />
                                     </div>
 
-                                    <img src={logo} className="md:hidden max-w-[130px] mx-auto mb-8 brightness-0" alt="Venn Solution Logo" />
+                                    <img src={logo} className="md:hidden max-w-[130px] mx-auto mb-8 brightness-0" alt="Hostinger Logo" />
                                 </a>
 
                                 <ul className="h-nav__list">

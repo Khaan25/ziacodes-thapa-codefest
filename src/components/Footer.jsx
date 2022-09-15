@@ -16,7 +16,7 @@ const Footer = () => {
                         <div className="maxSm:mt-6 mb-12 md:mb-0">
                             <div className="flex flex-col dark:text-white">
                                 <NavLink to="/" className="flex items-end mb-2">
-                                    <img src={logo} className="max-w-[250px]" alt="Venn Solution Logo" />
+                                    <img src={logo} className="max-w-[250px]" alt="Hostinger Logo" />
                                 </NavLink>
 
                                 <p className="text-lg">We are a web hosting provider <br className="sm:block hidden" /> on a mission to bring success to everyone who goes online.</p>
