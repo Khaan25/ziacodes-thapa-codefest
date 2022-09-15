@@ -70,6 +70,8 @@ I'm a Professional FrontEnd Web Developer with expertise in HTML, CSS, JS, React
 - Responsive Design
 - Theme Change with variable Change
 - Live Preview
+- Login / Register Page
+- Linked with Offical Hostinger Website
 - Fullscreen mode
 - Cross platform
 - SEO Friendly
